@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0;color: #444;}
+        ul, li{list-style: none;}
+        #box{
+            width: 100px;
+            margin: 30px auto;
+            position: relative;
+        }
+        #box span{
+            padding: 5px 15px;
+            border: 1px solid #eee;
+            border-box: 3px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+        #hide{
+            display: none;
+            height: 0;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            border: 1px solid #bce0b6;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        #hide li{
+            padding: 5px;
+            border-bottom: 1px dashed #bce0b6;
+        }
+        #hide li:nth-child(4){
+            border-bottom: 0;
+        }
+        #hide li a{
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <span >首页</span>
+    <ul id="hide">
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">贴吧</a></li>
+        <li><a href="#">知道</a></li>
+        <li><a href="#">音乐</a></li>
+    </ul>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('#box').hover(function(){
+            var $ul = $('#hide');
+            if($ul.is(':hidden')){
+                $ul.show();
+                $ul.animate({"height": "116"}, 500);
+            }
+        },function(){
+            var $ul = $('#hide');
+            if($ul.is(':visible')){
+                $ul.hide();
+                $ul.animate({"height": "0"}, 500);
+            }
+        });
+    });
+</script>
+</body>
+</html>

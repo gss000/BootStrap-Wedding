@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*头部样式*/
+header {
+  padding: 30px 0 15px; }
+
+#search {
+  margin-top: 20px; }
+
+/*导航样式*/
+.nav-head {
+  border-bottom: 1px solid #D7D7D7; }
+
+.nav {
+  margin-bottom: 0;
+  border-bottom: none; }
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #444;
+  cursor: pointer;
+  border-color: transparent;
+  border-bottom: 3px solid #009571; }
+
+/*主题部分*/
+.wedding-body {
+  margin-top: 40px; }
+
+.wedding-body .row {
+  margin: 0 -20px 0 0; }
+
+.wedding-body .foot {
+  padding-bottom: 10px; }
+
+.wedding-body h5 {
+  margin-left: 20px;
+  color: #4d4d4d; }
+
+.foot img,
+.foot span {
+  margin-left: 20px;
+  color: #888; }
+
+.foot img {
+  width: 30px;
+  height: 30px; }
+
+.foot div {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px; }
+
+.foot div a {
+  color: #7e7e7e; }
+
+.foot div a i {
+  vertical-align: inherit; }
+
+/*面包屑部分*/
+.breadcrumb {
+  background-color: transparent;
+  border-bottom: 1px solid #d4d4d4; }
+
+.breadcrumb li a {
+  color: #888; }
+
+.wedding-crumb .butterfly {
+  display: block;
+  background: url("../img/butterfly.jpg") no-repeat 50% 50%;
+  width: 32px;
+  height: 21px;
+  margin: -30px auto 0; }
+
+/*footer部分样式*/
+.public-footer {
+  margin-top: 80px;
+  background: url("../img/foot-bg.jpg") repeat; }
+
+.public-footer .circle {
+  background: url("../img/circle.jpg") repeat-x; }
+
+.public-footer .row {
+  padding: 60px 0 50px; }
+
+.public-footer h4 {
+  font-size: 18px;
+  color: #075442;
+  text-shadow: 1px 1px 1px #03a67f;
+  background: url("../img/transverse.jpg") repeat-x 0 50%; }
+
+.public-footer h4 span {
+  color: #444;
+  background: url("../img/foot-bg.jpg");
+  padding-right: 12px; }
+
+.public-footer .dashed-v {
+  background: url("../img/vertical.jpg") repeat-y right;
+  padding: 0 30px; }
+
+.public-footer p {
+  color: #fff; }
+
+/*bottom*/
+.public-bottom {
+  text-align: center;
+  background: url("../img/bottom.jpg") repeat-x;
+  padding: 30px 0; }
+
+/*# sourceMappingURL=wedding.css.map */
